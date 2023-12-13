@@ -6,4 +6,7 @@
    <select id="testCount" resultType="Integer">
       select count(*) from test
    </select>
+   <select id ="viewTable" resultType="test.spring.boot.component.BoardDTO">
+	   select * from board
+   </select>
 </mapper>

@@ -17,4 +17,9 @@ public class BmTestController {
 	public @ResponseBody String bmTest() {
 		return ""+service.testCount();
 	}
+	
+	@RequestMapping("view")
+	public @ResponseBody String viewTable() {
+		return ""+service.viewTable();
+	}
 }
