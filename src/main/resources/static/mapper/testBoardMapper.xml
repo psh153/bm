@@ -9,4 +9,9 @@
    <select id ="viewTable" resultType="test.spring.boot.component.BoardDTO">
 	   select * from board
    </select>
+   
+   <select id="testTable" resultType="test.spring.boot.component.EmpDTO"> 
+	   select e.ename, e.empno from emp e inner join dept d on e.deptno = d.deptno
+   </select>
+   
 </mapper>

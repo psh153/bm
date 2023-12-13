@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import test.spring.boot.component.BoardDTO;
+import test.spring.boot.component.EmpDTO;
 import test.spring.boot.mapper.TestBoardMapper;
 
 @Service
@@ -21,6 +22,11 @@ public class TestBoardServiceImpl implements TestBoardService{
 	@Override
 	public ArrayList<BoardDTO> viewTable() {
 		return mapper.viewTable();
+	}
+
+	@Override
+	public ArrayList<EmpDTO> testTable() {
+		return mapper.testTable();
 	}
 
 
