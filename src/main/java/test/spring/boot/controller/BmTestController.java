@@ -22,4 +22,8 @@ public class BmTestController {
 	public @ResponseBody String viewTable() {
 		return ""+service.viewTable();
 	}
+	@RequestMapping("hello")
+	public String hello() {
+		return "hello";
+	}
 }
